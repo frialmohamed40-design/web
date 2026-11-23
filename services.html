@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Cozy Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">☕ Cozy<span>Coffee</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Menu</a><a href="contact.html">Contact</a><a href="cart.html">Cart 🛒</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero"><p class="eyebrow">A CUP FOR EVERY MOOD</p><h1>Our Menu</h1><p>Find your new favorite.</p></section>
+  <section class="section">
+    <div class="section-heading"><p class="eyebrow">FRESHLY MADE</p><h2>Coffee & Classics</h2><p>Your cozy favorites, made with care.</p></div>
+    <div class="cards menu-grid">
+      <article class="coffee-card"><img src="images/espresso.jpg" alt="Fresh espresso with golden crema"><div class="card-body"><h3>Espresso</h3><p>A short, intense shot with a rich aroma and golden crema.</p><strong class="price">EGP 45</strong><button class="btn add-cart-btn" data-id="espresso" data-name="Espresso" data-price="45" data-image="images/espresso.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/cappuccino.jpg" alt="Cappuccino with leaf latte art"><div class="card-body"><h3>Cappuccino</h3><p>Espresso, steamed milk, and a soft foam top.</p><strong class="price">EGP 65</strong><button class="btn add-cart-btn" data-id="cappuccino" data-name="Cappuccino" data-price="65" data-image="images/cappuccino.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/house-special.jpg" alt="Iced house special coffee"><div class="card-body"><h3>House Special</h3><p>Our signature cozy blend, served chilled with caramel notes.</p><strong class="price">EGP 80</strong><button class="btn add-cart-btn" data-id="house-special" data-name="House Special" data-price="80" data-image="images/house-special.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/coffee-beans.jpg" alt="Freshly roasted coffee beans"><div class="card-body"><h3>Freshly Roasted Beans</h3><p>Rich coffee beans selected for a lovely aroma.</p><strong class="price">EGP 150</strong><button class="btn add-cart-btn" data-id="coffee-beans" data-name="Freshly Roasted Beans" data-price="150" data-image="images/coffee-beans.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/slow-brew.jpg" alt="Pour-over coffee brewing"><div class="card-body"><h3>Slow Brew</h3><p>A smooth, carefully brewed cup for a slower coffee moment.</p><strong class="price">EGP 70</strong><button class="btn add-cart-btn" data-id="slow-brew" data-name="Slow Brew" data-price="70" data-image="images/slow-brew.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/daily-latte.jpg" alt="Latte with heart-shaped art"><div class="card-body"><h3>Daily Latte</h3><p>Comforting espresso and silky milk in every sip.</p><strong class="price">EGP 75</strong><button class="btn add-cart-btn" data-id="daily-latte" data-name="Daily Latte" data-price="75" data-image="images/daily-latte.jpg">Add to Cart</button></div></article>
+    </div>
+  </section>
+  <section class="section menu-section">
+    <div class="section-heading"><p class="eyebrow">SOMETHING NEW TO SIP</p><h2>More Drinks</h2><p>Colorful, creamy, and made for your coffee moment.</p></div>
+    <div class="cards menu-grid">
+      <article class="coffee-card"><img src="images/iced-matcha.jpg" alt="Iced matcha latte"><div class="card-body"><h3>Iced Matcha Latte</h3><p>Earthy matcha blended with cold milk and ice.</p><strong class="price">EGP 95</strong><button class="btn add-cart-btn" data-id="iced-matcha" data-name="Iced Matcha Latte" data-price="95" data-image="images/iced-matcha.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/mocha.jpg" alt="Chocolate mocha topped with whipped cream"><div class="card-body"><h3>Chocolate Mocha</h3><p>Espresso and rich chocolate finished with whipped cream.</p><strong class="price">EGP 90</strong><button class="btn add-cart-btn" data-id="chocolate-mocha" data-name="Chocolate Mocha" data-price="90" data-image="images/mocha.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/strawberry-frappe.jpg" alt="Strawberry frappe with cream"><div class="card-body"><h3>Strawberry Frappe</h3><p>A cool, creamy strawberry blend with a fruity finish.</p><strong class="price">EGP 95</strong><button class="btn add-cart-btn" data-id="strawberry-frappe" data-name="Strawberry Frappe" data-price="95" data-image="images/strawberry-frappe.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/hot-chocolate.jpg" alt="Hot chocolate with marshmallows"><div class="card-body"><h3>Hot Chocolate</h3><p>Warm, velvety chocolate topped with soft marshmallows.</p><strong class="price">EGP 80</strong><button class="btn add-cart-btn" data-id="hot-chocolate" data-name="Hot Chocolate" data-price="80" data-image="images/hot-chocolate.jpg">Add to Cart</button></div></article>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-heading"><p class="eyebrow">A LITTLE SOMETHING SWEET</p><h2>Desserts</h2><p>The perfect treat to enjoy with your favorite drink.</p></div>
+    <div class="cards menu-grid">
+      <article class="coffee-card"><img src="images/berry-cheesecake.jpg" alt="Cheesecake topped with berries"><div class="card-body"><h3>Berry Cheesecake</h3><p>Creamy cheesecake with a buttery base and berry topping.</p><strong class="price">EGP 110</strong><button class="btn add-cart-btn" data-id="berry-cheesecake" data-name="Berry Cheesecake" data-price="110" data-image="images/berry-cheesecake.jpg">Add to Cart</button></div></article>
+      <article class="coffee-card"><img src="images/chocolate-brownie.jpg" alt="Chocolate brownie with vanilla ice cream"><div class="card-body"><h3>Chocolate Brownie</h3><p>Rich chocolate brownie served with a scoop of vanilla ice cream.</p><strong class="price">EGP 95</strong><button class="btn add-cart-btn" data-id="chocolate-brownie" data-name="Chocolate Brownie" data-price="95" data-image="images/chocolate-brownie.jpg">Add to Cart</button></div></article>
+    </div>
+  </section>
+</main>
+<footer class="footer"><a class="logo" href="index.html">☕ Cozy<span>Coffee</span></a><p>Made with love and coffee.</p><p>© <span class="year"></span> Cozy Coffee. All rights reserved.</p></footer>
+</body>
+</html>
