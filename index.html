@@ -1,145 +1,267 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Home | Cozy Coffee</title>
 
-    <title>Home | Cozy Coffee</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
-</head>
+<script src="script.js" defer></script>
 
-<body>
+</head><body><!-- HEADER -->
 
-    <!-- HEADER -->
-    <header class="site-header">
+<header class="site-header">
 
-        <a class="logo" href="index.html">
-            ☕ Cozy<span>Coffee</span>
+    <a class="logo" href="index.html">
+        ☕️ Cozy<span>Coffee</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn"
+        aria-label="Open menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart 🛒</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HOME HERO WITH VIDEO -->
+
+    <section class="hero">
+
+        <video class="hero-image"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="hero-coffee.jpg">
+
+            <source src="coffee-home.mp4" type="video/mp4">
+
+            Your browser does not support video.
+
+        </video>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">COFFEE AND COMFORT</p>
+
+            <h1>Your Coffee Moment Starts Here</h1>
+
+            <p>
+                Fresh coffee, warm moments, and a cozy place
+                to relax and enjoy every sip.
+            </p>
+
+            <br>
+
+            <a href="services.html" class="btn">
+                Explore Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT PREVIEW -->
+
+    <section class="section about-preview">
+
+        <div class="image-frame">
+
+            <img src="coffee-shop.jpg"
+                alt="Cozy Coffee Shop">
+
+        </div>
+
+        <div>
+
+            <p class="eyebrow">WELCOME TO COZY COFFEE</p>
+
+            <h2>
+                More Than Coffee, It's a Feeling.
+            </h2>
+
+            <p>
+                Cozy Coffee started with one simple idea:
+                coffee should make everyday moments feel special.
+            </p>
+
+            <p>
+                Enjoy freshly prepared drinks, delicious flavors,
+                and a warm welcoming atmosphere.
+            </p>
+
+            <a href="about.html" class="btn">
+                Discover Our Story
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAVORITES -->
+
+    <section class="section menu-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">OUR SPECIALTIES</p>
+
+            <h2>Our Coffee Favorites</h2>
+
+            <p>
+                Discover some of our most loved coffee drinks.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <article class="coffee-card">
+
+                <img src="cappuccino.jpg"
+                    alt="Cappuccino">
+
+                <div class="card-body">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>
+                        Smooth espresso with creamy steamed milk.
+                    </p>
+
+                    <a href="services.html" class="text-link">
+                        View Menu →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="coffee-card">
+
+                <img src="espresso.jpg"
+                    alt="Espresso">
+
+                <div class="card-body">
+
+                    <h3>Espresso</h3>
+
+                    <p>
+                        Rich coffee flavor in every little cup.
+                    </p>
+
+                    <a href="services.html" class="text-link">
+                        View Menu →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="coffee-card">
+
+                <img src="house-special.jpg"
+                    alt="House Special Coffee">
+
+                <div class="card-body">
+
+                    <h3>House Special</h3>
+
+                    <p>
+                        A special coffee experience made for you.
+                    </p>
+                    <a href="services.html" class="text-link">
+                        View Menu →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <a href="services.html" class="btn">
+            Explore Full Menu
         </a>
 
-        <button class="menu-btn" id="menuBtn"
-            aria-label="Open menu" aria-expanded="false">
-            ☰
-        </button>
-
-        <nav class="nav-links" id="navLinks">
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Menu</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart 🛒</a>
-        </nav>
-
-    </header>
+    </section>
 
 
-    <!-- HOME VIDEO HERO -->
+    <!-- COFFEE BANNER -->
 
-    <main>
+    <section class="coffee-banner">
 
-        <section class="video-hero">
+        <div>
 
-            <video autoplay muted loop playsinline preload="auto">
+            <p class="eyebrow">YOUR DAILY COFFEE MOMENT</p>
 
-                <source src="./coffee-video mp4" type="video/mp4">
+            <h2>Brewed With Love</h2>
 
-                Your browser does not support HTML video.
+            <p>
+                Every cup tells a beautiful story.
+            </p>
 
-            </video>
+        </div>
 
-            <div class="video-overlay">
-
-                <p class="welcome-text">
-                    WELCOME TO COZY COFFEE
-                </p>
-
-                <h1>Coffee & Comfort</h1>
-
-                <p class="hero-description">
-                    Fresh Coffee, Warm Moments
-                </p>
-
-                <a href="services.html" class="hero-button">
-                    Explore Our Menu
-                </a>
-
-            </div>
-
-        </section>
+    </section>
 
 
-        <!-- ABOUT PREVIEW -->
+    <!-- CONTACT -->
 
-        <section class="home-about">
+    <section class="contact-strip">
 
-            <div class="home-about-content">
+        <div>
 
-                <p class="eyebrow">OUR STORY</p>
+            <h2>Let's Have a Coffee Together!</h2>
 
-                <h2>More Than Just Coffee</h2>
+            <p>
+                Visit us and enjoy your favorite coffee.
+            </p>
 
-                <p>
-                    Welcome to Cozy Coffee, where every cup tells
-                    a story. Enjoy freshly brewed coffee, delicious
-                    desserts, and a warm atmosphere made just for you.
-                </p>
+        </div>
 
-                <a href="about.html" class="hero-button">
-                    Discover More
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- COFFEE MOMENT -->
-
-        <section class="home-moment">
-
-            <div class="moment-content">
-
-                <p class="eyebrow">YOUR DAILY COFFEE MOMENT</p>
-
-                <h2>Take a Break. Enjoy Your Coffee.</h2>
-
-                <p>
-                    Sometimes all you need is a warm cup of coffee
-                    and a peaceful moment.
-                </p>
-
-                <a href="services.html" class="hero-button">
-                    View Our Menu
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <a class="logo" href="index.html">
-            ☕ Cozy<span>Coffee</span>
+        <a href="contact.html" class="btn">
+            Contact Us
         </a>
 
-        <p>Made with love and coffee.</p>
+    </section>
 
-        <p>
-            © <span class="year"></span>
-            Cozy Coffee. All rights reserved.
-        </p>
+</main>
 
-    </footer>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <a class="logo" href="index.html">
+        ☕️ Cozy<span>Coffee</span>
+    </a>
+
+    <p>Made with love and coffee.</p>
+
+    <p>
+        © <span class="year"></span>
+        Cozy Coffee. All rights reserved.
+    </p>
+
+</footer>
 
 </body>
-
 </html>
