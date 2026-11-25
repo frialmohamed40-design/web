@@ -286,7 +286,7 @@ font-size: .9rem;
 min-height: 330px;
 background:
 linear-gradient(#21150f9c, #21150f9c),
-url('coffee-shop.jpg') center/cover;
+url('coffee-shop.svg') center/cover;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -348,7 +348,7 @@ margin-top: 5px;
 .page-hero {
 background:
 linear-gradient(#21150fc9, #21150fc9),
-url('hero-coffee.jpg') center/cover;
+url('hero-coffee.svg') center/cover;
 text-align: center;
 color: white;
 padding: 85px 20px;
